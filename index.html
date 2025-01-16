@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <title>
       Aditya's links
@@ -11,13 +13,20 @@
       * {
         border: 1px red dashed;
       }
+
+      html {
+        min-height: 100%;
+      }
       
       body {
+        min-height: 100%;
         padding-top: 40px;
         padding-bottom: 40px;
+        background: linear-gradient(150deg, #2b2e4a, #3e345e, #57386e, #723b78, #903c7a, #af3d73, #cd3f63, #e84545);
+        color: rgba(233, 211, 222, 0.8);
       }
 
-      .avatar-image{
+      .avatar-image {
         width: 128px;
         height: 128px;
         object-fit: cover;
@@ -25,15 +34,50 @@
         border: dashed grey 10px
       }
 
-      .thumbnail{
+      .thumbnail {
         width: 48px;
         height: 48px;
         border-radius: 48px;
         object-fit: cover;
       }
 
-    </style>
+      a {
+        color: rgba(255, 255, 255, 1.0);
+      }
 
+      .item {
+        background-color: rgba(149, 123, 173, 0.5);
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+      }
+
+      .main-container {
+        max-width: 640px;
+        margin: auto;
+      }
+
+      .image-row {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .name-row {
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      .social-icons-row {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .link-text {
+        text-align: center;
+        flex-grow: 1;
+      }
+    </style>
   </head>
 
   <body>
@@ -64,7 +108,7 @@
         <div class="item">
           <img class="thumbnail" src="/thumbnails/rice.png">
 
-          <a href="https://www.yummytummyaarthi.com/curd-rice-yoghurt-rice-fruity-curd-rice/" target="_blank">
+          <a class="link-text" href="https://www.yummytummyaarthi.com/curd-rice-yoghurt-rice-fruity-curd-rice/" target="_blank">
             How to make curd rice?
           </a>
         </div>
@@ -72,7 +116,7 @@
         <div class="item">
           <img class="thumbnail" src="/thumbnails/roti.png">
 
-          <a href="https://amala.earth/blogs/amala-earth-blog/bajra-benefits" target="_blank">
+          <a class="link-text" href="https://amala.earth/blogs/amala-earth-blog/bajra-benefits" target="_blank">
             Bajra: A superfood that you need to add to your diet
           </a>
         </div>
@@ -80,7 +124,7 @@
         <div class="item">
           <img class="thumbnail" src="/thumbnails/thali.png">
 
-          <a href="https://www.timeout.com/chicago/restaurants/best-indian-restaurants-in-chicago-curry-masala-and-more" target="_blank">
+          <a class="link-text" href="https://www.timeout.com/chicago/restaurants/best-indian-restaurants-in-chicago-curry-masala-and-more" target="_blank">
             Best Indian food in Chicago!
           </a>
         </div>
