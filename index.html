@@ -3,16 +3,22 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <title>
       Aditya's links
     </title>
 
     <style>
+      /*
       * {
         border: 1px red dashed;
       }
+      */
 
       html {
         min-height: 100%;
@@ -24,6 +30,7 @@
         padding-bottom: 40px;
         background: linear-gradient(150deg, #2b2e4a, #3e345e, #57386e, #723b78, #903c7a, #af3d73, #cd3f63, #e84545);
         color: rgba(233, 211, 222, 0.8);
+        font-family: "Roboto";
       }
 
       .avatar-image {
@@ -31,7 +38,7 @@
         height: 128px;
         object-fit: cover;
         border-radius: 128px;
-        border: dashed grey 10px
+        border: solid black 2px
       }
 
       .thumbnail {
@@ -43,6 +50,7 @@
 
       a {
         color: rgba(255, 255, 255, 1.0);
+        text-decoration: none;
       }
 
       .item {
@@ -50,6 +58,10 @@
         margin-bottom: 20px;
         display: flex;
         align-items: center;
+        border-radius: 1000px;
+        padding: 5px;
+        padding-right: 53px;
+        box-shadow: 4px 4px 10px 0px rgba(122, 32, 122, 0.5);
       }
 
       .main-container {
@@ -65,6 +77,9 @@
       .name-row {
         margin-bottom: 30px;
         text-align: center;
+        font-family: "Georgia";
+        font-size: 24px;
+        font-weight: 900;
       }
 
       .social-icons-row {
@@ -92,15 +107,15 @@
 
       <div class="social-icons-row">
         <a href="https://github.com/akothar0" target="_blank">
-          Github
+          <i class="fa-brands fa-github"></i>
         </a>
 
         <a href="https://www.linkedin.com/in/kothariaditya/" target="_blank">
-          LinkedIn
+          <i class="fa-brands fa-linkedin"></i>
         </a>
         
         <a href="https://www.instagram.com/guysitsmeaditya/" target="_blank">
-          Instagram
+          <i class="fa-brands fa-instagram"></i>
         </a>
       </div>
 
